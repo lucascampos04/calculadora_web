@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="layout">
+        <h1>CALCULADORA</h1>
+        <p id="barra_number"></p>
+        <table>    
+            <td><button onclick="ligarDesligar()">On</button></td>
+            <td><button onclick="ligarDesligar()">Off</button></td>
+         </table>
+        <div class="buttons">
+            <table>
+                <td><button class="linha1" onclick="deletarTodosNumeros()">C</button></td>
+                <td><button class="linha1" onclick="deletarUltimoNumero()"><</button></td>
+                <td><button class="linha1" onclick="adicionarOperador('/')">/</button></td>
+                <td><button class="linha1" onclick="adicionarOperador('+')">+</button></td>
+            </table> 
+            <table>
+                <td><button onclick="adicionarNumero(9)">9</button></td>
+                <td><button onclick="adicionarNumero(8)">8</button></td>
+                <td><button onclick="adicionarNumero(7)">7</button></td>
+                <td><button class="linha1" onclick="adicionarOperador('-')">-</button></td>
+            </table>
+            <table>
+                <td><button onclick="adicionarNumero(6)">6</button></td>
+                <td><button onclick="adicionarNumero(5)">5</button></td>
+                <td><button onclick="adicionarNumero(4)">4</button></td>
+                <td><button class="linha1" onclick="adicionarOperador('*')">*</button></td>
+            </table>
+            <table>
+                <td><button onclick="adicionarNumero(3)">3</button></td>
+                <td><button onclick="adicionarNumero(2)">2</button></td>
+                <td><button onclick="adicionarNumero(1)">1</button></td>
+                <td><button class="linha1" onclick="calcularResultado()">=</button></td>
+            </table>
+            <table>
+                <td><button class="linha2" onclick="adicionarNumero(0)">0</button></td>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
